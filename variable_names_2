@@ -1,0 +1,84 @@
+// 6.1. Примеры, где можно более наглядно учесть в именах уровни абстракции.
+
+buff — address_data_to_refresh
+// данные адреса на основе которых обновляются другие атрибуты класса (https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L61)
+
+search — delimiter_of_start_text_block
+search2 — delimiter_of_end_text_block
+// эти параметры используются в методе Pars
+// (https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L204).
+// В них предполагаются некоторые подстроки, которые являются разделителями для извлечения из основного текста блока текста, находящегося между этими разделителями.
+
+data — validator_config
+// конфигурация валидатора (https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L216)
+
+result — prior_validator_config_data
+// предварительные данные, в которых есть данные конфигурации валидатора (https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L229)
+
+
+// 6.2. Примеры, где в качестве имён использовались технические термины из информатики.
+
+$signature
+$transaction
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L86
+
+tree, chain, node, root, stack
+https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php
+
+intersection
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L159 
+
+union
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L173
+
+
+// 6.3. Примеры, когда имена даны с учётом контекста.
+
+$id
+$transactions
+// атрибуты класса Block (https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php)
+
+Id
+Type
+From
+To
+Amount
+// компоненты сигнатуры, хоть и не переменные, но хорошо читаются и виден контекст благодаря наименованиям
+// (https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L78)
+
+$id
+$type
+$from
+$to
+$amount
+$signature
+// атрибуты класса Transaction (https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php)
+
+size
+slots
+values
+// атрибуты класса NativeDictionary (https://github.com/ingniq/algorithms/blob/master/nc/nc.py#L1)
+
+
+// 6.4. Имена, длины которых не укладываются в 8-20 символов.
+
+q — queue_for_testing
+// https://github.com/ingniq/algorithms/blob/master/queue/tests.py#L61
+
+q — queue
+N — shift
+// параметры в функции rotate (https://github.com/ingniq/algorithms/blob/master/queue/func.py#L4)
+
+ps — power_set_for_testing
+// https://github.com/ingniq/algorithms/blob/master/ps/tests.py#L13
+
+f_len — filter_length
+// https://github.com/ingniq/algorithms/blob/master/bf/bf.py#L6 
+
+str1 — string_value
+// параметр в функции add (https://github.com/ingniq/algorithms/blob/master/bf/bf.py#L19)
+
+c — character
+str1 — string_value
+// https://github.com/ingniq/algorithms/blob/master/bf/bf.py#L35 
+
