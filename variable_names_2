@@ -73,6 +73,7 @@ ps — power_set_for_testing
 // https://github.com/ingniq/algorithms/blob/master/ps/tests.py#L13
 
 f_len — filter_length
+// обязательный параметр при инициализации объекта класса BloomFilter
 // https://github.com/ingniq/algorithms/blob/master/bf/bf.py#L6 
 
 str1 — string_value
@@ -80,5 +81,6 @@ str1 — string_value
 
 c — character
 str1 — string_value
+// цикл по символам строки
 // https://github.com/ingniq/algorithms/blob/master/bf/bf.py#L35 
 
