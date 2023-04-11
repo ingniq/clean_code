@@ -1,0 +1,80 @@
+// 7.1. Примеры правильного именования булевых переменных.
+
+__ascending — __is_ascending
+// атрибут класса, который указывает направление сортировки
+// https://github.com/ingniq/algorithms/blob/2a7977fbcc5e85e9b7e2bfc4a88c26484294f3cd/ol/ol.py#L50 
+
+bounceable — is_bounceable
+testnet — is_testnet
+// параметры функции, участвующие в формировании данных в кодировке base64
+// https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L369
+
+online — is_online
+// параметр отвечает за отображение необходимого цвета для параметра конфигурации валидатора
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L997
+
+result — update_is_available
+// доступны ли обновления для mytonctrl
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L192
+
+input — is_working
+// от этого параметра функции зависит возвращаемый текст («working»/«not working») и его цвет
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L434
+
+
+// 7.2. Случаи, когда можно использовать (или уже используется) типичные имена булевых переменных.
+
+// вместо переменной index с хранимым значением можно использовать булевую переменную index_found
+// https://github.com/ingniq/algorithms/blob/2a7977fbcc5e85e9b7e2bfc4a88c26484294f3cd/nd/nd.py#L21 
+
+// используется булевая переменная ok
+// https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L264
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L2513
+
+
+// 7.3. Именования в циклах.
+
+// переменная i используется в цикле for для хранения текущего индекса итерируемого объекта
+// https://github.com/ingniq/algorithms/blob/master/nc/nc.py#L202
+
+// переменная i используется в цикле for для хранения текущего значения итерируемого объекта
+// https://github.com/ingniq/algorithms/blob/2a7977fbcc5e85e9b7e2bfc4a88c26484294f3cd/nd/tests.py#L122 
+
+// переменная v используется в цикле for для хранения текущего значения итерируемого объекта
+// https://github.com/ingniq/algorithms/blob/2a7977fbcc5e85e9b7e2bfc4a88c26484294f3cd/nd/tests.py#L195 
+
+// наименование slot_index позволяет понять (более нагляден) что именно индексы слотов хранятся в атрибуте _populate
+// https://github.com/ingniq/algorithms/blob/2a7977fbcc5e85e9b7e2bfc4a88c26484294f3cd/ps/ps.py#L194 
+
+
+// 7.4. Случаи использования пары имён - антонимов.
+
+search — delimiter_of_start_text_block
+search2 — delimiter_of_end_text_block
+// эти параметры используются в методе Pars
+// (https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L204).
+// В них предполагаются некоторые подстроки, которые являются разделителями для извлечения из основного текста блока текста,
+// находящегося между этими разделителями.
+
+// переменные start/end с данными для извлечения подстроки
+// https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L574
+
+// переменные startValidation/endValidation и т.п.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L479
+
+
+// 7.5. Случаи, когда временные переменные надо переименовать
+
+buff — address_data_to_refresh
+// данные адреса на основе которых обновляются другие атрибуты класса
+// https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L61
+
+buff — validator_data_to_config
+// данные валидатора, добавляемые в конфигурацию.
+// Можно сразу создать библиотеку с необходимыми данными и не помещать ее в переменную для долговременного хранения,
+// а сразу отправить в качестве параметра в метод append.
+// https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L166 
+
+result — prior_validator_config_data
+// предварительные данные, в которых есть данные конфигурации валидатора 
+// https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L229
