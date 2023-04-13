@@ -1,0 +1,57 @@
+search — delimiter_of_start_text_block
+search2 — delimiter_of_end_text_block
+// не совсем очевидный смысл в наименовании search. По сути в переменной хранится разделитель текста, который нужно найти и после него вернуть блок текста
+// также в наименовании search2 используется цифра, которая не несет особого смысла
+// https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L205
+
+result — prior_validator_config_data
+string — validator_config_string
+// result и string не показывают достаточно явного смысла своего содержимого
+// также это стандартные имена, используемые в языках программирования
+// https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L229 
+
+str1 — value_string (или text)
+// строка, передаваемая в функцию для вычисления ее хэша
+// https://github.com/ingniq/algorithms/blob/master/bf/bf.py#L11
+
+buff — git_url_list
+// более ясное наименование переменной, указывающее что в ней содержится git url в формате именно списка
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L125
+
+tree — has_tree
+// используется только для того, чтобы проверить, есть ли в списке определенное значение
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L129
+
+data — git_repo_data
+// не понятно что за данные в переменной data могут быть
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L149
+
+runArgs — run_update
+// некорректное наименование — запуск аргументов. Правильнее запуск обновления.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L155
+
+rootWorkchainEnabledTime_int — root_workchain_enabled_timestamp
+// Непонятно что за число имеется ввиду (секунды, минуты, часы… ?). Возможно под int имеется ввиду timestamp.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L217
+
+totalValidators — validators_total
+onlineValidators — validators_online 
+// лучше спецификаторы указывать в виде постфикса
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L220
+
+oldStartWorkTime — old_start_work_timestamp
+// не указана единица измерения
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L228
+
+netLoadAvg — net_load_avg_real_num
+tpsAvg — tps_avg_real_num
+disksLoadAvg — disks_load_avg_real_num
+disksLoadPercentAvg — disks_load_avg_percent
+// более корректное указание спецификаторов единиц измерения (к примеру)
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L249
+
+logic — red_if_outside_borders
+// только автор знает что должно быть в параметре функции logic.
+// Посколько, судя по коду, предполагается только два варианта содержимого параметра,
+// то можно использовать булевую переменную.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L421
