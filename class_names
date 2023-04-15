@@ -1,0 +1,59 @@
+// 3.1. Проблемы в наименованиях классов.
+
+MyPyClass -- ProcessMaker
+// В классе создаются процессы для переданного скрипта (ссылка на файл) с соответствующим контекстом
+// (настраивается логирование, контроль ресурсов для процесса, прочии конфиги)
+// https://github.com/igroman787/mypylib/blob/8727d55f87c56e70ff7d71e293f219136aef5f7c/mypylib.py#L147
+
+MyPyConsoleItem -- ConsoleCommand
+// Класс, описывающий добавляемую команду -- наименование команды, функция, которая срабатывает и описание
+// https://github.com/igroman787/mypyconsole/blob/a8e8969a6cac6bf96a34655504278d273adad98a/mypyconsole.py#L8
+
+MyPyConsole -- ConsoleCommandRuner
+// В обьекте данного класса можно хранить произвольное число консольных команд и запускать их, указав конкретную
+// https://github.com/igroman787/mypyconsole/blob/a8e8969a6cac6bf96a34655504278d273adad98a/mypyconsole.py#L16
+
+TokenInfo -- Token
+// Нет особого смысла использовать слово Info.
+// https://github.com/PHPCheckstyle/phpcheckstyle/blob/master/src/PHPCheckstyle/TokenInfo.php#L13
+
+StatementItem -- Statement
+// Слово Item не несет в себе какого-либо дополнительного смысла.
+// https://github.com/PHPCheckstyle/phpcheckstyle/blob/master/src/PHPCheckstyle/StatementItem.php#L14
+
+
+// 3.2. Проблемы в наименованиях методов.
+
+WalletsCheck -- CheckWallets
+// В основном в коде глагол используется впереди существительного. В частности, действие Check. А здесь вконце, после существительного.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L1916
+
+NewDomain -- CreateDomain
+// Создает и добавляет новый домен. Ранее в похожих по смыслу методах использовалось слово Create.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L2899
+
+Try -- RunFunction
+// Метод запускает переданную функцию с указанными аргументами. Ранее использовался метод Run для запуска чего-либо.
+// К тому же слово "try" является частью синтаксиса языка.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L3732
+
+Event -- EnableEvent
+// Наименование метода представляет собой существительное и не понятен смысл действия.
+// Прочие наименования методов в виде глагола или утверждения.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L3922
+
+Statistics -- SaveStatistics
+// Наименование метода представляет собой существительное и не понятен смысл действия.
+// Прочие наименования методов в виде глагола или утверждения.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L3962
+
+Offers -- VoteOffers
+// Наименование метода представляет собой существительное и не понятен смысл действия.
+// Прочие наименования методов в виде глагола или утверждения.
+// Внутри функции выполняется метод VoteOffer() для каждого Offer.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L4198
+
+FirstNodeSettings -- SetUpFirstNode
+// Настройка первого узла. В основном глагол используется впереди существительного.
+// Прочие наименования методов в виде действия или утверждения.
+// https://github.com/ton-blockchain/mytonctrl/blob/1518c717decf374bf3ec2512edf6476dbc1d833b/mytoninstaller.py#L252
