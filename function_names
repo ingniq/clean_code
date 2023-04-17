@@ -1,0 +1,54 @@
+
+Cycle -- RunFunctionInLoop
+// Не является глаголом и не описывает, что делает метод. Переданная функция периодически запускается в цикле с указанным таймаутом.
+// https://github.com/igroman787/mypylib/blob/8727d55f87c56e70ff7d71e293f219136aef5f7c/mypylib.py#L599
+
+ColorPrint -- PrintColorText
+// Печать текста в цвете. Не ясное наименование.
+// https://github.com/igroman787/mypylib/blob/8727d55f87c56e70ff7d71e293f219136aef5f7c/mypylib.py#L754
+
+timeago -- find_out_time_passed
+// Не является глаголом. Выполняет вычисление разницы между переданной датой и текущей.
+// https://github.com/igroman787/mypylib/blob/8727d55f87c56e70ff7d71e293f219136aef5f7c/mypylib.py#L804
+
+ParsBlock -- ParsChainData
+// Метод класса Block. Парсит строку и достает из нее данные цепочки.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L155
+
+LastTransDump -- GetLastTransDump
+// Не глагол.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L459
+
+AddrFile2Object -- AddrFileToObject
+// Буква О читается как часть цифры 20.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L717
+
+WalletsCheck -- CheckWallets
+// Не корректно соблюдена схема глагол + существительное.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L1916
+
+NewDomain -- CreateDomain
+// Не глагол. Создает и добавляет новый домен.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L2899
+
+Try -- RunFunction
+// Не достаточно ясное наименование. Метод запускает переданную функцию с указанными аргументами.
+// К тому же слово "try" является частью синтаксиса языка.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L3732
+
+Event -- EnableEvent
+// Наименование метода представляет собой существительное и не понятен смысл действия.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L3922
+
+Statistics -- SaveStatistics
+// Наименование метода представляет собой существительное и не понятен смысл действия.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L3962
+
+Offers -- VoteOffers
+// Наименование метода представляет собой существительное и не понятен смысл действия.
+// Внутри функции выполняется метод VoteOffer() для каждого Offer.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L4198
+
+FirstNodeSettings -- SetUpFirstNode
+// Настройка первого узла. Впереди существительного должен использоваться глагол.
+// https://github.com/ton-blockchain/mytonctrl/blob/1518c717decf374bf3ec2512edf6476dbc1d833b/mytoninstaller.py#L252
