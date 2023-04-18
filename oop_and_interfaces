@@ -1,0 +1,36 @@
+3.1. Методы-фабрики для более наглядного кода
+
+// Добавлен метод HashTable.create_by_parameters(size=10, step=1)
+// https://github.com/ingniq/algorithms/blob/master/ht/ht.py#L8
+
+// Добавлен метод NativeDictionary.from_size(10)
+// https://github.com/ingniq/algorithms/blob/master/nd/nd.py#L8
+
+// Добавлен метод BlockTreeNode::createByParameters($parentId, $block)
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTreeNode.php#L51
+
+
+3.2. Наименования интерфейсов и абстрактных классов
+
+AbstractController -- Controller
+// Предоставляет общие методы, необходимые во всех котроллерах.
+// От этого класса наследуются такие классы, как GatewayController, LogController, StoreController, OrdersController и пр.
+
+CrudControllerInterface -- CrudController
+// Описывает методы CRUD, которые должны быть реализованы во всех подобных классах.
+// Этот класс реализуют такие классы, как ClientCrudController, UserCrudController
+
+JsonSerializable
+// Это интерфейс, который описывает методы, которые должны быть реализованы для возможности сериализации данных объектов в формате Json.
+// Этот интерфейс реализуют такие классы, как Client, License, OrderStatus, Store и т.п.
+
+Backupable
+// Абстрактный класс с определенными и не определенными методами, константами и атрибутами, необходимые для всех дочерних классов,
+// которые должны поддерживать механизм бэкапа, таких как ScenarioTemplateManager, CampaignManager, CampaignAwarenessManager, BenchmarkSectorManager и т.д.
+
+BaseImapClient
+// Абстрактный класс с методами, константами и атрибутами. Наследуется классом ImapClient
+
+AbstractScenario
+// Абстрактный класс с определенными и не определенными методами, константами и атрибутами, необходимые для всех дочерних классов,
+// таких как HyperlinkScenario, LandingScenario, MockAbstractScenario и т.д.
