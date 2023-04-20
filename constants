@@ -1,0 +1,60 @@
+
+test_0 — ZERO_VALUE_FOR_TESTING
+// Было в качестве аттрибута класса, теперь константа.
+// Часто используется в юнит-тестах.
+// https://github.com/ingniq/algorithms/blob/master/dyn_array/tests.py#L6
+
+test_negative -- NEGATIVE_VALUE_FOR_TESTING
+// Было в качестве аттрибута класса, теперь константа.
+// Часто используется в юнит-тестах.
+// https://github.com/ingniq/algorithms/blob/master/dyn_array/tests.py#L7
+
+test_int -- INTEGER_VALUE_FOR_TESTING
+// Было в качестве аттрибута класса, теперь константа.
+// Часто используется в юнит-тестах.
+// https://github.com/ingniq/algorithms/blob/master/dyn_array/tests.py#L8
+
+test_str -- STRING_VALUE_FOR_TESTING
+// Было в качестве аттрибута класса, теперь константа.
+// Часто используется в юнит-тестах.
+// https://github.com/ingniq/algorithms/blob/master/dyn_array/tests.py#L9
+
+test_none -- NONE_VALUE_FOR_TESTING
+// Было в качестве аттрибута класса, теперь константа.
+// Часто используется в юнит-тестах.
+// https://github.com/ingniq/algorithms/blob/master/dyn_array/tests.py#L10
+
+test_list -- LIST_VALUE_FOR_TESTING
+// Было в качестве аттрибута класса, теперь константа.
+// Часто используется в юнит-тестах.
+// https://github.com/ingniq/algorithms/blob/master/dyn_array/tests.py#L11
+
+"debug" -- LOG_LEVEL_DEBUG
+// Часто встречается неизменяемая строка.
+// Уровень логирования.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L387
+
+".addr" -- WALLET_EXTENSION_FILE_ADDR
+// Часто встречается неизменяемая строка.
+// Расширение файла.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L679
+
+".pk" -- WALLET_EXTENSION_FILE_PK
+// Часто встречается неизменяемая строка.
+// Расширение файла.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L682
+
+10 -- TRANSACTION_FEE
+// "Магическое" число.
+// Комиссия за транзакцию.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L1494
+
+20 -- TRANSACTION_FEE_WHEN_USING_POOL
+// "Магическое" число.
+// Комиссия за транзакцию при использования пула.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L1499
+
+300 -- MARGIN_OF_SECONDS_TO_END_WORK
+// "Магическое" число.
+// Запас времени на завершение работы.
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L1599
