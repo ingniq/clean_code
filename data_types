@@ -1,0 +1,91 @@
+10 -- TRANSACTION_LIMIT_IN_BLOCK
+// Магическое число.
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L106
+
+
+2 -- ACCOUNT_LENGTH_MIN
+10 -- ACCOUNT_LENGTH_MAX
+// Магическое число.
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L152
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L192
+
+
+"/^[a-f0-9]{32}$/" -- SIGNATURE_PATTERN
+// Магическае строка.
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L246
+
+
+$transaction->getId() -- (string) $transaction->getId()
+$transaction->getType() -- (string) $transaction->getType()
+$transaction->getAmount() -- (string) $transaction->getAmount()
+// Явное приведение типов
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L79
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L80
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L83
+
+
+setAmount($amount) -- setAmount(int $amount): void
+// Типизация параметра метода. Класс не позволит передавать через этот параметр ничего, кроме числа.
+// Но, хотя и типизировано как целое число, позволит передать вещественное с последующим неявным преобразованием в целое.
+// Существует возможность включения строгой типизации, посредством объявления declare(strict_types=1)
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L216
+
+
+setLang($lang = 'en-us') -- setLang(string $lang = 'en-us'): void
+// Типизация параметра метода. Для включения строгой типизации необходимо выполнить команду declare(strict_types=1)
+// https://github.com/PHPCheckstyle/phpcheckstyle/blob/master/src/PHPCheckstyle/PHPCheckstyle.php#L458
+
+
+$isExcluded = false;
+foreach ($excludes as $patternExcluded) {
+    if (strstr($src, $patternExcluded)) {
+        $isExcluded = true;
+    }
+}
+// Нет необходимости использовать условие if. Более читаемо будет так:
+$isExcluded = (bool) strstr($src, $patternExcluded);
+// А еще лучше использовать более быструю и менее ресурсоёмкую функцию strpos().
+$isExcluded = (bool) strpos($src, $patternExcluded);
+// Кроме этого лучше сразу при первом же нахождении прерывать цикл.
+// https://github.com/PHPCheckstyle/phpcheckstyle/blob/master/src/PHPCheckstyle/PHPCheckstyle.php#L785
+
+
+if ($this->statementStack->getCurrentStackItem()->type === StatementItem::TYPE_ARRAY && $this->statementStack->getCurrentStackItem()->name === 'square_bracket_open') {...}
+// Более читаемо будет если результат каждого выражения в условии поместить в свою булевую переменную:
+if($currentStatementTypeIsArray && $currentStatementTypeIsSquareBracketOpen) {...}
+// https://github.com/PHPCheckstyle/phpcheckstyle/blob/master/src/PHPCheckstyle/PHPCheckstyle.php#L1300
+
+
+if ($this->_isActive('typeNameMatchesFileName') && ! (substr($fileBaseName, 0, strlen($typeName) + 1) === $typeName . ".")) {...}
+// Более читаемо будет если результат каждого выражения в условии поместить в свою булевую переменную:
+if ($isActive && ! $isFileNameMatched) {...}
+// https://github.com/PHPCheckstyle/phpcheckstyle/blob/master/src/PHPCheckstyle/PHPCheckstyle.php#L1763
+
+
+if ($this->_isActive('encapsedVariablesInsideString') && (! $this->statementStack->getCurrentStackItem()->inHeredoc || ($this->_inFuncCall && ! $this->_config->isException('encapsedVariablesInsideString', end($this->_currentFuncCall))))) {...}
+// Более читаемо будет если результат каждого выражения в условии поместить в свою булевую переменную:
+if($checkIsActive && ! ($inHeredoc || ($inFuncCall && ! $isException))) {...}
+// https://github.com/PHPCheckstyle/phpcheckstyle/blob/master/src/PHPCheckstyle/PHPCheckstyle.php#L2675
+
+
+if ($this->_inControlStatement || $this->_inFuncCall || ! isset($this->lineNumber) || $this->tokenizer->checkNextToken(T_NEW_LINE) || $this->tokenizer->checkNextValidToken(T_PARENTHESIS_CLOSE) || $this->tokenizer->checkNextValidToken(T_BOOLEAN_AND) || $this->tokenizer->checkNextValidToken(T_BOOLEAN_OR) || $this->tokenizer->checkNextValidToken(T_OBJECT_OPERATOR)) {...}
+// Результат группы проверок следующего токена можно поместить в булевую переменную. Тогда нагрузка восприятия немного снижается:
+$nextTokenIsCorrect = $this->tokenizer->checkNextToken(T_NEW_LINE) ||
+                        $this->tokenizer->checkNextValidToken(T_PARENTHESIS_CLOSE) ||
+                        $this->tokenizer->checkNextValidToken(T_BOOLEAN_AND) ||
+                        $this->tokenizer->checkNextValidToken(T_BOOLEAN_OR) ||
+                        $this->tokenizer->checkNextValidToken(T_OBJECT_OPERATOR);
+if ($this->_inControlStatement || $this->_inFuncCall || ! isset($this->lineNumber) || $nextTokenIsCorrect) {...}
+// Однако здесь есть небольшое потенциальное ухудшение производительности кода.
+// В изначальном варианте при выполнении любого из предшествующих условий последующие не выполняются.
+// В измененном варианте же всегда будет вычисляться результат выражения, помещаемый в переменную $nextTokenIsCorrect.
+// https://github.com/PHPCheckstyle/phpcheckstyle/blob/master/src/PHPCheckstyle/PHPCheckstyle.php#L3222
+
+
+if (startWorkTime - now) > local.db["participateBeforeEnd"] and (now + local.db["periods"]["elections"]) < startWorkTime:
+// Более читаемо будет если результат каждого выражения в условии поместить в свою переменную:
+timeToStart = startWorkTime - now
+isEarlyToParticipate = timeToStart > local.db["participateBeforeEnd"]
+isEarlyToElections = timeToStart > local.db["periods"]["elections"]
+if isEarlyToParticipate and isEarlyToElections:
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L1583
