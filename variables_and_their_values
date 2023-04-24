@@ -1,0 +1,82 @@
+setType($type) -- setType(int $type)
+// Строгая типизация параметров методов (режим strict_types включен).
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L93
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L115
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockChain.php#L72
+// и т.д.
+
+test_0 — ZERO_VALUE_FOR_TESTING
+// Было в качестве аттрибута класса, теперь константа.
+// Часто используется в юнит-тестах.
+// https://github.com/ingniq/algorithms/blob/master/dyn_array/tests.py#L6
+
+newNode = Node(value)
+# insert in the head or in an empty list
+if in_head:
+    newNode._prev = self._head
+    newNode._next = self._head._next
+    self._head._next._prev = newNode
+    self._head._next = newNode
+    return
+// Объявление и инициализация переменной newNode непосредственно перед первым обращением (перенес ближе).
+// https://github.com/ingniq/algorithms/blob/master/ol/ol.py#L95
+
+del in_head
+del in_tail
+// Завершение работы с переменной. Уничтожение переменных, так как больше не понадобятся.
+// https://github.com/ingniq/algorithms/blob/master/ol/ol.py#L104
+// https://github.com/ingniq/algorithms/blob/master/ol/ol.py#L171
+
+resize(self, new_capacity) -- resize(self, new_capacity: int)
+// Типизация параметра метода.
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L23
+
+if not isinstance(new_capacity, int):
+    raise ValueError('The parameter must be an integer')
+// Инвариант.
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L24
+
+insert(self, i, itm) -- insert(self, i: int, itm)
+// Типизация параметра метода.
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L42
+
+if not isinstance(i, int):
+    raise ValueError('The parameter must be an integer')
+// Инвариант.
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L44
+
+delete(self, i) -- delete(self, i: int)
+// Типизация параметра метода.
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L62
+
+if not isinstance(i, int):
+    raise ValueError('The parameter must be an integer')
+// Инвариант.
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L64
+
+remove(self, value) -- remove(self, value: str)
+// Типизация параметра метода.
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L150
+
+if not isinstance(value, str):
+    raise ValueError('The parameter must be a string')
+// Инвариант.
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L153
+
+intersection(self, set2) -- intersection(self, set2: PowerSet)
+// Типизация параметра метода.
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L169
+
+if not isinstance(set2, PowerSet):
+    raise ValueError('The parameter must be a PowerSet')
+// Инвариант.
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L171
+
+__init__(self, sz) -- __init__(self, sz: int)
+// Типизация параметра метода.
+// https://github.com/ingniq/algorithms/blob/master/nc/nc.py#L2
+
+if not isinstance(sz, int):
+    raise ValueError('The parameter must be an integer')
+// Инвариант.
+// https://github.com/ingniq/algorithms/blob/master/nc/nc.py#L3
