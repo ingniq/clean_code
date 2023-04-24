@@ -1,27 +1,27 @@
 10 -- TRANSACTION_LIMIT_IN_BLOCK
 // Магическое число.
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L106
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L112
 
 
 2 -- ACCOUNT_LENGTH_MIN
 10 -- ACCOUNT_LENGTH_MAX
 // Магическое число.
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L152
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L192
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L164
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L203
 
 
 "/^[a-f0-9]{32}$/" -- SIGNATURE_PATTERN
 // Магическае строка.
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L246
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L257
 
 
 $transaction->getId() -- (string) $transaction->getId()
 $transaction->getType() -- (string) $transaction->getType()
 $transaction->getAmount() -- (string) $transaction->getAmount()
 // Явное приведение типов
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L79
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L80
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L83
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L84
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L85
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L88
 
 
 setAmount($amount) -- setAmount(int $amount): void
