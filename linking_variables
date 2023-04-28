@@ -1,0 +1,24 @@
+declare(strict_types=1);
+// Переменная strict_types связывается в файле, который является точкой входа приложения.
+// Это максимально раннее связываение для того, чтобы включить строгую типизацию во всем последующем коде.
+// Интерпретатор языка PHP прочитает и выполнит связывание и инструкцию declare().
+// https://github.com/ingniq/BlockchainTestTask/blob/master/bootstrap.php#L2
+
+
+preg_match(self::SIGNATURE_PATTERN, ...)
+// Здесь происходит связываение параметра функции и значения константы из глобальной памяти при интерпретации кода.
+// Константа постоянно хранится в памяти, но читаемость кода лучше.
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L257
+
+
+def InitTranslator(self, filePath=None):
+    if filePath is None:
+        filePath = self.db.get("translateFilePath")
+    file = open(filePath, encoding="utf-8")
+    text = file.read()
+    file.close()
+    self.buffer["translate"] = json.loads(text)
+#end define
+// Наиболее позднее связывание, только в необходимый момент.
+// В self.buffer["translate"] помещаются данные для локализации, полученные из файла в процессе выполнения команды InitTranslator.
+// https://github.com/igroman787/mypylib/blob/8727d55f87c56e70ff7d71e293f219136aef5f7c/mypylib.py#L618
