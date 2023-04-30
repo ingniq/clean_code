@@ -1,0 +1,39 @@
+$transactions = $node->getBlock()->getTransactions();
+
+/** @var Transaction $transaction */
+foreach ($transactions as $transaction) {...}
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockChain.php#L141
+// Метод getTransactions() возвращает массив объектов Transaction.
+// В данном случае работа с массивом происходит без прямой индексации и происходит просто перебор всех элементов.
+// Есть только два случая использования метода getTransactions() в проекте.
+// И в обоих случаях полученный массив рассматривается как последовательная структура.
+// Вместо массива может использоваться структура данных "вектор" (https://www.php.net/manual/en/class.ds-vector.php).
+// В плане работы с памятью она эффективнее массивов. Так как предполагается использование этих данных
+// только в качестве последовательных, то этот выбор будет лучшим.
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockChain.php#L104
+
+
+$this->treemap[$parentId][] = $blockId;
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L172
+// В слот treemap[$parentId] можно помещать вместо массива "вектор",
+// так как массив используется только как последовательная структура при переборе всех элементов.
+
+
+$stackIds = new SplStack();
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L189
+// Здесь используется стек. В процессе поиска самого нижнего узла в дереве в стек помещаются и извлекаются id узлов.
+// В результате при достижении определенных условий в стеке верхний элемент оказывается искомым.
+// Можно было бы использовать массив, но стек выглядит более удачным решением.
+
+
+$chain = new SplDoublyLinkedList();
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L84
+// Здесь используется двусвязный список для построения цепочки узлов от самого нижнего узла до корня дерева.
+// Далее эта структура используется в переборе как последовательная, поэтому нет резона использовать массив.
+
+
+if (!$visited[$itemId][$blockId]) {...} -- if (empty($visited[$blockId]) {...}
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L206
+// Здесь пример ошибки с индексами. При выполнении программа выдает только предупреждение
+// ("Trying to access array offset on value of type bool") и условие всегда выполняется.
+// Необходимо внимательнее проверять код при работе с индексами.
