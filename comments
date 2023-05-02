@@ -19,7 +19,7 @@ if ($this->getType() == self::TYPE_EMISSION) {
 # В качестве того множества, которое будем обходить, выбираем меньшее.
 target, iterate = [self, set2] if self.size() > set2.size() else [set2, self]
 // https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L175
-// Старый комментарий излишен. Добавлен комментарий, который поясняет смысл действия.
+// Добавлен комментарий, который поясняет смысл действия.
 
 
 //there can be only one root block
