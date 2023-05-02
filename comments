@@ -5,7 +5,7 @@ if ($this->getType() == self::TYPE_EMISSION) {
     $this->from = null;
 }
 // https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L136
-// Старый комментарий излишен. Добавлен комментарий, который поясняет смысл в контексте бизнес-логики.
+// Добавлен комментарий, который поясняет смысл в контексте бизнес-логики.
 
 
 // if transaction “type” is “emission” – ignore the passed “from” value and set “from” property to null. -- // To create new coins, the from field is not needed
