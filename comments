@@ -1,0 +1,83 @@
+// 3.1
+
+// To create new coins, the from field is not needed
+if ($this->getType() == self::TYPE_EMISSION) {
+    $this->from = null;
+}
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L136
+// Старый комментарий излишен. Добавлен комментарий, который поясняет смысл в контексте бизнес-логики.
+
+
+// if transaction “type” is “emission” – ignore the passed “from” value and set “from” property to null. -- // To create new coins, the from field is not needed
+if ($this->getType() == self::TYPE_EMISSION) {
+    $this->from = null;
+}
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L169
+// Старый комментарий излишен. Добавлен комментарий, который поясняет смысл в контексте бизнес-логики.
+
+
+# В качестве того множества, которое будем обходить, выбираем меньшее.
+target, iterate = [self, set2] if self.size() > set2.size() else [set2, self]
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L175
+// Старый комментарий излишен. Добавлен комментарий, который поясняет смысл действия.
+
+
+//there can be only one root block
+if (is_null($parentId) && !is_null($this->blockTree->getRoot())) {
+    return;
+}
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockChain.php#L78
+// Комментарий для лучшей читаемости.
+
+
+//parentBlockId refers to a block that doesn’t exist in the “Block Tree”
+if (!is_null($parentId) && !$this->blockTree->getNode($parentId)) {
+    return;
+}
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockChain.php#L83
+// Комментарий для лучшей читаемости.
+
+
+//Adding a "block" to an existing "parent Block Id" should not result in a negative balance on some accounts.
+if (!$this->validateAmount($block)) {...}
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockChain.php#L188
+// Комментарий, который поясняет смысл в контексте бизнес-логики.
+
+
+//Only transactions of the 'transfer' type can result in a negative balance
+if ($transaction->getType() === Transaction::TYPE_TRANSFER) {...}
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockChain.php#L107
+// Комментарий, который поясняет смысл в контексте бизнес-логики.
+
+
+// 3.2
+
+//if passed “to” account is shorter than 2 characters or longer than 10 characters.
+$length = strlen($to);
+if ($length < self::ACCOUNT_LENGTH_MIN || $length > self::ACCOUNT_LENGTH_MAX)
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L202
+// Излишний комментарий. Добавлена константа для лучшей читаемости.
+
+
+//if passed signature’s length is not equal to 32 characters
+if (1 !== preg_match(self::SIGNATURE_PATTERN, $signature))
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L254
+// Излишний комментарий. Добавлена константа для лучшей читаемости.
+
+
+//Initialization the stack.
+$stackIds = new SplStack() -- $blocksForProcessingStack = new SplStack()
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L178
+// Излишний комментарий. Изменено наименование переменной для лучшей читаемости.
+
+
+//Taking a vertex from the stack.
+$itemId = $stackIds->pop() -- $parentBlockId = $blocksForProcessingStack->pop()
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L189
+// Излишний комментарий. Изменено наименование переменной для лучшей читаемости.
+
+
+//check if the number of existing transactions in block is less than 10
+if (count($this->transactions) >= self::TRANSACTION_LIMIT_IN_BLOCK)
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L107
+// Излишний комментарий. Добавлена константа для лучшей читаемости.
