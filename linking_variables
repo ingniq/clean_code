@@ -8,7 +8,7 @@ declare(strict_types=1);
 preg_match(self::SIGNATURE_PATTERN, ...)
 // Здесь происходит связываение параметра функции и значения константы из глобальной памяти при интерпретации кода.
 // Константа постоянно хранится в памяти, но читаемость кода лучше.
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L257
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L255
 
 
 def InitTranslator(self, filePath=None):

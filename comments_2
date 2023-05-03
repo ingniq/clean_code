@@ -44,7 +44,7 @@ if ($this->getType() == self::TYPE_EMISSION) {
 
 private function addNode(?int $parentId, Block $block) {
 // If $parentId is null, then it means insertion into the root of the tree.
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L135
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L136
 // Прояснение нюанса поведения при передачи в параметр значения null.
 
 // A chain of nodes from the root to the lowest node in the block tree.
@@ -74,9 +74,9 @@ if ($this->blockTree->getNode($block->getId())) {
 6. Комментарий TODO.
 
 // TODO: Check the optimality and correctness of the implementation of the selected algorithm.
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L173
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L175
 // Добавлен комментарий, так как есть сомнения в корректности реализации.
 
 $visited = array();  // TODO: сheck whether to use this variable
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L185
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L187
 // Добавлен комментарий, так как есть сомнения в необходимости использования переменной (возможно достаточно стэка).

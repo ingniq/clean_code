@@ -1,34 +1,34 @@
 10 -- TRANSACTION_LIMIT_IN_BLOCK
 // Магическое число.
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L112
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L107
 
 
 2 -- ACCOUNT_LENGTH_MIN
 10 -- ACCOUNT_LENGTH_MAX
 // Магическое число.
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L164
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L203
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L165
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L202
 
 
 "/^[a-f0-9]{32}$/" -- SIGNATURE_PATTERN
 // Магическае строка.
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L257
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L255
 
 
 $transaction->getId() -- (string) $transaction->getId()
 $transaction->getType() -- (string) $transaction->getType()
 $transaction->getAmount() -- (string) $transaction->getAmount()
 // Явное приведение типов
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L80
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L81
 // https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L84
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L85
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L88
 
 
 setAmount($amount) -- setAmount(int $amount): void
 // Типизация параметра метода. Класс не позволит передавать через этот параметр ничего, кроме числа.
 // Но, хотя и типизировано как целое число, позволит передать вещественное с последующим неявным преобразованием в целое.
 // Существует возможность включения строгой типизации, посредством объявления declare(strict_types=1)
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L216
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L226
 
 
 setLang($lang = 'en-us') -- setLang(string $lang = 'en-us'): void

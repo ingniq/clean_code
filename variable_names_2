@@ -20,16 +20,16 @@ result — prior_validator_config_data
 
 $signature
 $transaction
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L86
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L79
 
 tree, chain, node, root, stack
 https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php
 
 intersection
-// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L159 
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L169 
 
 union
-// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L173
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L187
 
 
 // 6.3. Примеры, когда имена даны с учётом контекста.
@@ -44,7 +44,7 @@ From
 To
 Amount
 // компоненты сигнатуры, хоть и не переменные, но хорошо читаются и виден контекст благодаря наименованиям
-// (https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L78)
+// (https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Block.php#L79)
 
 $id
 $type
@@ -74,7 +74,7 @@ ps — power_set_for_testing
 
 f_len — filter_length
 // обязательный параметр при инициализации объекта класса BloomFilter
-// https://github.com/ingniq/algorithms/blob/master/bf/bf.py#L6 
+// https://github.com/ingniq/algorithms/blob/master/bf/bf.py#L6
 
 str1 — string_value
 // параметр в функции add (https://github.com/ingniq/algorithms/blob/master/bf/bf.py#L19)
@@ -82,5 +82,5 @@ str1 — string_value
 c — character
 str1 — string_value
 // цикл по символам строки
-// https://github.com/ingniq/algorithms/blob/master/bf/bf.py#L35 
+// https://github.com/ingniq/algorithms/blob/master/bf/bf.py#L35
 

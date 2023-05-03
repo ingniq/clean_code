@@ -40,7 +40,7 @@ if (!is_null($parentId) && !$this->blockTree->getNode($parentId)) {
 
 //Adding a "block" to an existing "parent Block Id" should not result in a negative balance on some accounts.
 if (!$this->validateAmount($block)) {...}
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockChain.php#L188
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockChain.php#L88
 // Комментарий, который поясняет смысл в контексте бизнес-логики.
 
 
@@ -67,13 +67,13 @@ if (1 !== preg_match(self::SIGNATURE_PATTERN, $signature))
 
 //Initialization the stack.
 $stackIds = new SplStack() -- $blocksForProcessingStack = new SplStack()
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L178
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L181
 // Излишний комментарий. Изменено наименование переменной для лучшей читаемости.
 
 
 //Taking a vertex from the stack.
 $itemId = $stackIds->pop() -- $parentBlockId = $blocksForProcessingStack->pop()
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L189
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L192
 // Излишний комментарий. Изменено наименование переменной для лучшей читаемости.
 
 

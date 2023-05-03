@@ -1,7 +1,7 @@
 setType($type) -- setType(int $type)
 // Строгая типизация параметров методов (режим strict_types включен).
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L93
-// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L115
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L130
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L161
 // https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockChain.php#L72
 // и т.д.
 
@@ -25,7 +25,7 @@ del in_head
 del in_tail
 // Завершение работы с переменной. Уничтожение переменных, так как больше не понадобятся.
 // https://github.com/ingniq/algorithms/blob/master/ol/ol.py#L104
-// https://github.com/ingniq/algorithms/blob/master/ol/ol.py#L171
+// https://github.com/ingniq/algorithms/blob/master/ol/ol.py#L121
 
 resize(self, new_capacity) -- resize(self, new_capacity: int)
 // Типизация параметра метода.

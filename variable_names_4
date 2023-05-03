@@ -8,7 +8,7 @@ result — prior_validator_config_data
 string — validator_config_string
 // result и string не показывают достаточно явного смысла своего содержимого
 // также это стандартные имена, используемые в языках программирования
-// https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L229 
+// https://github.com/ton-blockchain/punisher/blob/bb3489aab1523cb79a162c956a42932b01ee7354/punisher.py#L229
 
 str1 — value_string (или text)
 // строка, передаваемая в функцию для вычисления ее хэша
@@ -35,7 +35,7 @@ rootWorkchainEnabledTime_int — root_workchain_enabled_timestamp
 // https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L217
 
 totalValidators — validators_total
-onlineValidators — validators_online 
+onlineValidators — validators_online
 // лучше спецификаторы указывать в виде постфикса
 // https://github.com/ton-blockchain/mytonctrl/blob/master/mytonctrl.py#L220
 
