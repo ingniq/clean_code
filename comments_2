@@ -1,0 +1,82 @@
+// 1. Информативные комментарии.
+
+// The signature must contain 32 lowercase letters or numbers
+if (1 !== preg_match(self::SIGNATURE_PATTERN, $signature))
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L254
+// Добавлен комментарий для большей информативности.
+
+# указатель на элемент с минимальным кол-м обращений не изменяется
+self.assertEqual(0, nc._min_hits[0])
+self.assertEqual(0, nc.hits[nc._min_hits[0]])
+// https://github.com/ingniq/algorithms/blob/master/nc/tests.py#L14
+// Добавлен комментарий для большей информативности.
+
+# колллизия
+nc.put("gnirts", str(randrange(size)))
+index = nc.find("gnirts")
+self.assertEqual(664, index)
+// https://github.com/ingniq/algorithms/blob/master/nc/tests.py#L18
+// Добавлен комментарий для большей информативности.
+
+
+// 2. Представление намерений.
+
+# В качестве того множества, которое будем обходить, выбираем меньшее.
+target, iterate = [self, set2] if self.size() > set2.size() else [set2, self]
+// https://github.com/ingniq/algorithms/blob/master/ps/ps.py#L175
+// Добавлен комментарий, который поясняет смысл действия.
+
+self.number_of_find_operations = 0  # Количество операций поиска элемента с минимальным кол-ом обращений для оценки эффективности.
+debug -- number_of_find_operations
+// https://github.com/ingniq/algorithms/blob/master/nc/nc.py#L89
+// Добавлен комментарий, который поясняет для чего переменная.
+// Изменено наименование переменной для большей ясности.
+
+// To create new coins, the from field is not needed
+if ($this->getType() == self::TYPE_EMISSION) {
+    $this->from = null;
+}
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L136
+// Добавлен комментарий для чего производится.
+
+
+3. Прояснение.
+
+private function addNode(?int $parentId, Block $block) {
+// If $parentId is null, then it means insertion into the root of the tree.
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L135
+// Прояснение нюанса поведения при передачи в параметр значения null.
+
+// A chain of nodes from the root to the lowest node in the block tree.
+return $chain;
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L98
+// Прояснение возвращаемого значения.
+
+
+5. Усиление.
+
+$transactions = $block->getTransactions();
+//The block must have at least one transaction.
+if (empty($transactions)) {
+    return false;
+}
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockChain.php#L52
+// Блок обязательно должен иметь транзакции. Важная деталь бизнес-логики.
+
+//A block with the same id should not exist yet.
+if ($this->blockTree->getNode($block->getId())) {
+    return false;
+}
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockChain.php#L56
+// Блок обязательно должен существовать в дереве блоков. Важная деталь бизнес-логики.
+
+
+6. Комментарий TODO.
+
+// TODO: Check the optimality and correctness of the implementation of the selected algorithm.
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L173
+// Добавлен комментарий, так как есть сомнения в корректности реализации.
+
+$visited = array();  // TODO: сheck whether to use this variable
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L185
+// Добавлен комментарий, так как есть сомнения в необходимости использования переменной (возможно достаточно стэка).
