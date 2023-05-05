@@ -1,0 +1,162 @@
+/**
+* Transaction constructor.
+*
+* Parameter initialization.
+*/
+public function __construct()
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L86
+// Бессмысленный коментарий, добавленный только ради "правил стиля" (4. Шум, 10. Обязательные комментарии).
+
+
+/**
+* Get 'id' property.
+*
+* @return int
+*/
+public function getId() { return $this->id; }
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L96
+// Бессмысленный коментарий, добавленный только ради "правил стиля" (4. Шум, 10. Обязательные комментарии).
+
+
+/**
+* Set 'id' property.
+*
+* @param int $id
+* @return void
+*/
+public function setId(int $id)
+{
+    $this->id = $id;
+}
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/Transaction.php#L103
+// Бессмысленный коментарий, добавленный только ради "правил стиля" (4. Шум, 10. Обязательные комментарии).
+
+
+//The list will be iterated in a last in, first out order, like a stack.
+$chain->setIteratorMode(SplDoublyLinkedList::IT_MODE_LIFO);
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L85
+// Ненужный комментарий (4. Шум).
+
+
+/**
+* Adding block.
+* Every Block will have only 1 ancestor and the unlimited number of descendants.
+* There can be only 1 tree root – the Block without any parents.
+*
+* @param int|null $parentId
+* @param Block    $block
+* @return void
+* @throws Exception
+*/
+public function addBlock(?int $parentId, Block $block)
+// https://github.com/ingniq/BlockchainTestTask/blob/master/src/BlockchainTestTask/BlockTree.php#L104
+// Ненужные комментарии в заголовке. Информация об ограничениях есть в теле функции. (7. Избыточные комментарии)
+
+
+def Delete(self):
+    os.remove(self.addrFilePath)
+#end define
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L264
+// Окончание блоков конструкций языка (def, if, class) встречается в коде часто, но и не во всех случаях.
+// Не несет в себе особой пользы. (4. Шум, 5. Позиционные маркеры)
+
+
+# Check config file
+self.CheckConfigFile(fift, liteClient)
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L335
+// Ненужный комментарий (4. Шум, 12. ИСпользуйте наименования функций).
+
+
+// #local.AddLog("start GetAccount function", "debug")
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L402
+// 11. Закомментированный код
+
+
+#for item in messages:
+for data in messages:
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L489
+// Ненужный комментарий (4. Шум).
+
+
+#if address:
+#	src = "{}:{}".format(workchain, xhex2hex(address))
+#end if
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L500
+// 11. Закомментированный код
+
+
+subwalletDefault = 698983191 + workchain # 0x29A9A317 + workchain
+// https://github.com/ton-blockchain/mytonctrl/blob/master/mytoncore.py#L1812
+// Не самый лучший комментарий -- не разъясняет что это за значение (2. Бормотание).
+
+
+# dirty hack, but GetInitBlock() function uses the same technique
+// https://github.com/ton-blockchain/mytonctrl/blob/1518c717decf374bf3ec2512edf6476dbc1d833b/mytoninstaller.py#L142
+// Оценочный комментарий кажется отвлеченным и особого конкретного смысла не имеет (2. Бормотание).
+
+
+// Trim
+$todoMsg = trim($todoMsg);
+// https://github.com/PHPCheckstyle/phpcheckstyle/blob/master/src/PHPCheckstyle/PHPCheckstyle.php#L3330
+// Ненужный комментарий (4. Шум).
+
+
+/**
+* Utility function to determine whether or not a T_DOC_COMMENT
+* is at the file level or belongs to a class, interface, method
+* or member.<br>
+* <b>Note:<b> This will miss file doc blocks with no new line
+* before the next token - in this case we can never be sure
+* what the doc block is aimed at.
+*
+* @return true if the next token is a T_NEW_LINE or T_DOC_COMMENT,
+*         false otherwise.
+*/
+private function _isFileDocComment()
+// https://github.com/PHPCheckstyle/phpcheckstyle/blob/master/src/PHPCheckstyle/PHPCheckstyle.php#L3397
+// Излишние длинные заголовочные комментарии (7. Избыточные комментарии).
+
+
+/**
+* Check for the existence of a docblock for the current token
+* o go back and find the previous token that is not a whitespace
+* o if it is a access specifier (private, public etc), then
+* see if private members are excluded from comment check
+* (input argument specified this). if we find an access
+* specifier move on to find the next best token
+* o if it is ABSTRACT or STATIC specifier move on to find the next best token
+* o if the found token is a T_DOC_COMMENT, then we have a docblock
+*
+* This, of course, assumes that the function/class/interface has to be
+* immediately preceded by docblock. Even regular comments are not
+* allowed, which I think is okay.
+*
+* Launched when a CLASS / FUNCTION or INTERFACE statement is found.
+*
+* @param Integer $token
+*            T_CLASS, T_FUNCTION or T_INTERFACE
+* @return true is docblock is found
+*/
+private function _checkDocExists($token)
+// https://github.com/PHPCheckstyle/phpcheckstyle/blob/master/src/PHPCheckstyle/PHPCheckstyle.php#L3415
+// Излишние длинные заголовочные комментарии (7. Избыточные комментарии).
+
+
+// Locate the function, class or interface token
+$functionTokenPosition = $this->tokenizer->getCurrentPosition();
+while (true) {
+    // the type - function, class or interface. (Horribly named).
+    $functionToken = $this->tokenizer->peekTokenAt($functionTokenPosition);
+
+    $isFunction = $this->tokenizer->checkToken($functionToken, T_FUNCTION);
+    $isClass = $this->tokenizer->checkToken($functionToken, T_CLASS);
+    $isInterface = $this->tokenizer->checkToken($functionToken, T_INTERFACE);
+
+    if ($isFunction || $isClass || $isInterface) {
+        break;
+    }
+    $functionTokenPosition --;
+}
+// https://github.com/PHPCheckstyle/phpcheckstyle/blob/master/src/PHPCheckstyle/PHPCheckstyle.php#L3449
+// Нет связи между комментарием и кодом. Возможно устаревший комментарий или расположен далеко от связанного кода
+// (1. Неочевидные комментарии, 9. Нелокальная информация?).
